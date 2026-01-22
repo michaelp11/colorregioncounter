@@ -10,7 +10,7 @@ st.title("🎨 Color Region Analyzer")
 
 # --- Sidebar Controls ---
 st.sidebar.header("Settings")
-uploaded_file = st.sidebar.file_uploader("Choose an image...", type=["jpg", "png", "tiff", "tif"])
+uploaded_file = st.sidebar.file_uploader("Choose an image...", type=["jpg", "png", "tiff", "tif"], max_upload_size=500)
 
 mode = st.sidebar.radio("Palette Mode", ["Auto Palette (K-Means)", "Manual Palette"])
 
